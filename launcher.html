@@ -53,6 +53,20 @@
             margin-right: 16px;
         }
 
+        .c-form__label {
+            width: 100px;
+            display: inline-block;
+        }
+
+        .c-form__input {
+            width: 230px;
+            margin-top: 8px;
+        }
+
+        .c-form .c-form__input:nth-child(1) {
+            margin-top: 0;
+        }
+
         .u-display-flex {
             display: flex;
         }
@@ -65,6 +79,10 @@
             align-items: center;
         }
 
+        .u-mt-16 {
+            margin-top: 16px;
+        }
+
     </style>
 </head>
 <body>
@@ -73,10 +91,33 @@
         <h1 class="c-header__heading">Lazy Peons DB Updater</h1>
     </div>
     <form action="">
-        <div class="u-display-flex u-justify-content-center u-align-item-center">
-            <button class="c-form__button c-form__button--scrape">Scrape</button>
-            <button class="c-form__button c-form__button--send">Send</button>
+        <fieldset class="c-form__fieldset">
+                <label class="c-form__label" for="dungeon">Dungeon</label>
+                <input class="c-form__input" data-lp-input-dungeon required type="text" id="dungeon">
+                <label class="c-form__label" for="boss">Boss</label>
+                <input class="c-form__input" data-lp-input-boss required type="text" id="boss">
+        </fieldset>
+        <fieldset class="c-form__fieldset">
+                <label class="c-form__label" for="player">Player</label>
+                <input class="c-form__input" data-lp-input-player required type="text" id="player">
+                <label class="c-form__label" for="class">Class</label>
+                <input class="c-form__input" data-lp-input-class required type="text" id="class">
+                <label class="c-form__label" for="spec">Spec</label>
+                <input class="c-form__input" data-lp-input-spec required type="text" id="spec">
+                <label class="c-form__label" for="level">Level</label>
+                <input class="c-form__input" data-lp-input-level required type="text" id="level">
+        </fieldset>
+        <fieldset class="c-form__fieldset">
+                <label class="c-form__label" for="url">URL</label>
+                <input class="c-form__input" data-lp-input-url required type="text" id="url">
+                <label class="c-form__label" for="timestamp">Timestamp</label>
+                <input class="c-form__input" data-lp-input-timestamp required type="text" id="timestamp">
+        </fieldset>
+        <div class="u-display-flex u-justify-content-center u-align-item-center u-mt-16">
+            <button data-lp-scrape class="c-form__button c-form__button--scrape">Scrape</button>
+            <button data-lp-send class="c-form__button c-form__button--send">Send</button>
         </div>
     </form>
+    <script src="scrape.js"></script>
 </body>
 </html>
