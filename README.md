@@ -1,1 +1,1 @@
-# wow-trio-browser-ext
+# Lazy Peons DB Updater
