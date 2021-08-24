@@ -1,0 +1,1 @@
+# wow-trio-browser-ext
