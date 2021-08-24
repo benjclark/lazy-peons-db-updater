@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Lazy Peons DB Updater",
+  "description" : "A browser extension that scrapes youtube vid pages and posts data to an api for db update",
+  "version" : "1.0.0",
+  "icons":{"128": "icon_128.png"},
+  "browser_action":{
+    "default_icon" : "icon.png",
+    "default_popup" : "launcher.html"
+  },
+  "permissions":[
+    "activeTab"
+  ]
+}
